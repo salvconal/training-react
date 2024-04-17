@@ -4,11 +4,12 @@ import Welcome from './components/Welcome';
 
 
 function App() {
+  let today = new Date(Date.now()).toLocaleDateString();
   return (
     <div className="main">
-      <Welcome name="Salva" > </Welcome>
-      <Welcome name="Jane" > </Welcome>
-      <Welcome name="World" > </Welcome>
+      <Welcome name="Salva" today={today} >Hola </Welcome>
+      <Welcome name="Jane" today={today}> </Welcome>
+      <Welcome name="World"today={today} > </Welcome>
 
     </div>
   );
