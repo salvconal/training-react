@@ -1,7 +1,7 @@
 
 import './Person.css';
 
-function Person() {
+function Person(props) {
   return (
     <div> 
         <ul>
